@@ -1,46 +1,32 @@
-// "use client";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+/* eslint-disable @next/next/no-img-element */
+"use client";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
+import { MapPinIcon } from "lucide-react";
 
 function AnnonceItem() {
   return (
-    <Card className="w-[250px]">
-      <CardHeader>
-        <CardTitle>
-          <Image
-            src={
-              "https://images.unsplash.com/photo-1695754190419-bedddd21ccb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-            }
-            width={220}
-            alt=""
-            className="rounded-sm h-[110px]"
-            height={20}
-          />
-        </CardTitle>
-        <CardDescription>Les candidats sont de plus en p.</CardDescription>
-      </CardHeader>
-      {/* <CardContent>
-        <div className="grid w-full items-center gap-4">
-          <div className="flex flex-col space-y-1.5">
-            <Label htmlFor="name">+221783071757</Label>
-          </div>
+    <div className=" w-[300px] rounded-lg bg-white p-3 flex items-center flex-col h-[230px]">
+      <div className="w-full h-[110px] rounded-lg">
+        <img
+          src={
+            "https://images.unsplash.com/photo-1695754190419-bedddd21ccb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+          }
+          alt=""
+          className="rounded-sm h-full w-full"
+        />
+      </div>
+      <p className="flex flex-col w-full items-start font-semibold text-base mt-1">
+        100 0000 CFA
+      </p>
+      <div className="flex flex-col w-full items-start text-xs font-medium">
+        <span>
+          Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur....
+        </span>
+        <div className=" flex self-end">
+          <MapPinIcon size={15} /> Dakar,Senegal
         </div>
-      </CardContent> */}
-      <CardFooter className="flex flex-row-reverse">
-        <Button>Voir plus </Button>
-      </CardFooter>
-    </Card>
+      </div>
+    </div>
   );
 }
 

@@ -75,3 +75,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+*{
+  color: #8E93AC;
+}
